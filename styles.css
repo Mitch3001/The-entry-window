@@ -1,0 +1,62 @@
+* body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.neumorphic {
+    background: #e0e5ec; 
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+}
+
+.neumorphic-insert {
+    background: #e0e5ec; 
+    border-radius: 20px;
+    box-shadow: insert 10px 10px 20px #a3b1c6, insert -10px -10px 20px #ffffff;
+}
+
+.neumorphic-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+}
+
+.neumorphic-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Новые стили для анимации текста */
+h1 {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5em; /* Размер шрифта */
+    animation: gradient-animation 3s ease infinite; /* Анимация градиента */
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
